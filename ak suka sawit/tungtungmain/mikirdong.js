@@ -47,14 +47,14 @@ function setupevent() {
         });
     });
     
-    // Setup Secret Animal audio button
+    // secret animal gad damn
     const secretAnimalBtns = document.querySelectorAll('p[onclick*="AUDIOvineboom"]');
     secretAnimalBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             AUDIOvineboom();
         });
-        // Hapus inline onclick
+        // eras onceklik
         btn.removeAttribute('onclick');
     });
 }
@@ -200,8 +200,14 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') tutupkart();
 });
 
+let hitung = 0;
+
 function AUDIOvineboom() {
     const audio = new Audio('../foto%20foto/fine.mp3');
     audio.volume = 1;
     audio.play();
+    hitung++;
+    if (hitung === 10) {
+        window.location.href = "https://lomando.com/main.html";
+    }
 }
