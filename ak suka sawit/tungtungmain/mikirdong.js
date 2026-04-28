@@ -207,7 +207,15 @@ function AUDIOvineboom() {
     audio.volume = 1;
     audio.play();
     hitung++;
-    if (hitung === 3) {
+    if (hitung === 1) {
+        alert("SCAM!!!! >:P");
+    } else if (hitung === 3) {
+        alert("i told you it's a scam >:(");
+    } else if (hitung === 7) {
+        alert("DON'T PRESS THIS BUTTON EVER AGAIN, PLEASE! :(");
+    } else if (hitung === 9) {
+        alert("ok.");
+    } else if (hitung === 10) {
         window.location.href = "https://lomando.com/main.html";
     }
 }
