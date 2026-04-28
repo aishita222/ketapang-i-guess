@@ -207,7 +207,7 @@ function AUDIOvineboom() {
     audio.volume = 1;
     audio.play();
     hitung++;
-    if (hitung === 10) {
+    if (hitung === 3) {
         window.location.href = "https://lomando.com/main.html";
     }
 }
